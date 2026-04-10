@@ -739,7 +739,8 @@ addBtnRef.addEventListener("click", ()=>{
     arrayOfBookmarks.push(inputRef.value);
     inputRef.value = "";
     createItems(arrayOfBookmarks);
-});
+}) // 2
+;
 
 },{}]},["7wZbQ","2R06K"], "2R06K", "parcelRequired126", {})
 

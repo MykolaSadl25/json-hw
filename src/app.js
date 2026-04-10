@@ -26,7 +26,7 @@ addBtnRef.addEventListener("click",()=>{
     createItems(arrayOfBookmarks)
 })
 
-
+// 2
 
 
 

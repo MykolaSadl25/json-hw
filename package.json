@@ -6,7 +6,7 @@
   "scripts": {
     "dev":"npx parcel src/index.html",
     "build":"parcel build src/index.html --public-url /json-hw/",
-    "predeloy":"npm run build",
+    "predeploy":"npm run build",
     "deploy":"gh-pages -d dist"
   },
   "repository": {

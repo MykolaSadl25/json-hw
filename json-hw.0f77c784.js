@@ -717,8 +717,11 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 const addBtnRef = document.getElementById("addBookmarkBtn");
 const bookmarksListRef = document.querySelector("#bookmarkList");
 const inputRef = document.querySelector("#bookmarkInput");
-let arrayOfBookmarks = [];
 const STORAGE_KEY = "listOfBookmarks";
+let arrayOfBookmarks = [];
+const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+arrayOfBookmarks = saved;
+createItems(arrayOfBookmarks);
 function createItems(array) {
     const items = array.map((item)=>{
         return `<li>
